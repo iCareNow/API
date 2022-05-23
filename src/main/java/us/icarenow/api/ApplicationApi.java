@@ -1,4 +1,4 @@
-package main.java.us.icarenow.api;
+package us.icarenow.api;
 
 public class ApplicationApi {
 }
