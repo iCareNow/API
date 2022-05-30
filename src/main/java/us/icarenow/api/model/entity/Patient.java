@@ -12,10 +12,14 @@ public class Patient {
     private String name;
     private boolean insured;
 
+    public Patient() {
+    }
+
     public Patient(int id, String name, boolean insured){
         this.id = id;
         this.name = name;
     }
+
     public int getId() {
         return id;
     }

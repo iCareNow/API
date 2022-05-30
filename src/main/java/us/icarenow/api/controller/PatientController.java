@@ -1,5 +1,6 @@
 package us.icarenow.api.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -11,7 +12,9 @@ import java.util.Optional;
 
 @RestController
 public class PatientController {
-    public PatientService patientService = new PatientService();
+
+    @Autowired
+    private PatientService patientService;
 
     @GetMapping("patients")
     public List<Patient> findAll(){
@@ -38,7 +41,7 @@ public class PatientController {
         }
 
     }
-    @PostMapping("addPatient")
+    @PostMapping("patients")
     public String addPatient(@RequestBody Patient patient) {
         return patientService.addPatient(patient);
     }

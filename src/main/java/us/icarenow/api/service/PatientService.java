@@ -1,7 +1,10 @@
 package us.icarenow.api.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import us.icarenow.api.controller.PatientController;
 import us.icarenow.api.model.entity.Patient;
+import us.icarenow.api.repository.PatientRepository;
 
 
 import java.util.ArrayList;
@@ -10,6 +13,10 @@ import java.util.Optional;
 
 @Service
 public class PatientService {
+    @Autowired
+    private PatientRepository patientRepository;
+
+
     public int lastId = 5;
     private List<Patient> patientList = new ArrayList<Patient>() {{
         add(new Patient(0,"Radu Baciu", true));
