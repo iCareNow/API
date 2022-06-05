@@ -43,6 +43,5 @@ public class Patient {
     public void setInsured(boolean insured) {
         this.insured = insured;
     }
+
 }
-
-
