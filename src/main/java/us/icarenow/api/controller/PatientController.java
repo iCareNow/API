@@ -45,4 +45,5 @@ public class PatientController {
     public String addPatient(@RequestBody Patient patient) {
         return patientService.addPatient(patient);
     }
+
 }
