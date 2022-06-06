@@ -2,7 +2,6 @@ package us.icarenow.api.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import us.icarenow.api.controller.PatientController;
 import us.icarenow.api.model.entity.Patient;
 import us.icarenow.api.repository.PatientRepository;
 
